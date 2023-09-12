@@ -8,6 +8,10 @@ public class LearningApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(LearningApplication.class, args);
+		MarioGame marioGame = new MarioGame();
+		GameRunner gameRunner = new GameRunner(marioGame);
+
+		gameRunner.run();
 	}
 
 }
